@@ -15,8 +15,8 @@
     <header>
         <div id="heading">ScriBBler
             <span>
-                <button class="button" onclick="displaySignupForm()">Sign Up</button>
-                <button class="button">Sign In</button>
+                <button class="button" onclick="displaySignUpForm()">Sign Up</button>
+                <button class="button" onclick="displaySignInForm()">Sign In</button>
             </span>
         </div>
         <div id="sub-heading">Explore, Imagine, Create</div>
@@ -25,11 +25,11 @@
         <button class="post_button">All Posts</button>
         <button class="post_button">Create Post</button>
     </div>
-    <div id="signUpModal" class="signUpModal">
+    <div id="signUpModal">
         <form>
             <div id = "form_header">
                 <span>Get Started</span>
-                <i class="fa fa-close" onclick="formClose()"></i>
+                <i class="fa fa-close" onclick="closeSignUpForm()"></i>
             </div>
             <div id = "form_content">
                 <label class="formLabel">Name</label>
@@ -41,6 +41,21 @@
                 <label class=formLabel>Confirm Password</label>
                 <input type="password" placeholder="Re-enter your password">
                 <button id="signUpButton">Sign Up</button>
+            </div>
+        </form>
+    </div>
+    <div id="signInModal">
+        <form>
+            <div id = "form_header">
+                <span>Welcome Back !</span>
+                <i class="fa fa-close" onclick="closeSignInForm()"></i>
+            </div>
+            <div id = "form_content">
+                <label class="formLabel">Username</label>
+                <input type="text" placeholder="Enter your username">
+                <label class="formLabel">Password</label>
+                <input type="text" placeholder="Enter your password">
+                <button id="signUpButton">Sign In</button>
             </div>
         </form>
     </div>
