@@ -22,6 +22,81 @@ body {
     font-size: 16px;
 }
 
+.container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.post_button{
+    background-color: yellow;
+    font-size: 16px;
+    margin: 0.3%;
+}
+
+.signUpModal {
+    display: none;
+    position: absolute;
+    float: left;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    width: 21%;
+    justify-content: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    background-color: #f2f2f2;
+    margin: 8px;
+    box-sizing: border-box;
+    width: 100%;
+}
+
+#form_header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+#form_content {
+    display: flex;
+    flex-direction: column;
+    margin-top: 3%;
+}
+
+input {
+    margin: 8px 0;
+    display: inline-block;
+    padding: 10px;
+    background-color: lightgray;
+    border: none;
+}
+
+.formLabel {
+    size: 20px;
+}
+
+#signUpButton {
+    background-color: green;
+    color: white;
+    height: 40px;
+    width: 100%;
+}
+
+#form_header {
+    padding-bottom: 15px;
+    border-bottom-style: inset;
+    opacity: 0.6;
+}
+
 #sub-heading {
     font-family: 'Ubuntu Mono', monospace;
 }

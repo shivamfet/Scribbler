@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width , initial-scale=1" />
     <link href="https://fonts.googleapis.com/css2?family=Montez&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Ubuntu+Mono&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" type="text/css" media="screen" href="./styles/index.css" />
 </head>
 
@@ -14,13 +15,36 @@
     <header>
         <div id="heading">ScriBBler
             <span>
-                <button class="button">Sign Up</button>
+                <button class="button" onclick="displaySignupForm()">Sign Up</button>
                 <button class="button">Sign In</button>
             </span>
         </div>
         <div id="sub-heading">Explore, Imagine, Create</div>
     </header>
-    <!-- TODO: Include all your code for the header and home page here -->
+    <div class="container">
+        <button class="post_button">All Posts</button>
+        <button class="post_button">Create Post</button>
+    </div>
+    <div id="signUpModal" class="signUpModal">
+        <form>
+            <div id = "form_header">
+                <span>Get Started</span>
+                <i class="fa fa-close" onclick="formClose()"></i>
+            </div>
+            <div id = "form_content">
+                <label class="formLabel">Name</label>
+                <input type="text" placeholder="Enter your name">
+                <label class="formLabel">Username</label>
+                <input type="text" placeholder="Enter your username">
+                <label class="formLabel">Password</label>
+                <input type="password" placeholder="Enter your password">
+                <label class=formLabel>Confirm Password</label>
+                <input type="password" placeholder="Re-enter your password">
+                <button id="signUpButton">Sign Up</button>
+            </div>
+        </form>
+    </div>
+    <script src="./scripts/index.js"></script>
 </body>
 
 </html>
