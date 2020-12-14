@@ -1,4 +1,4 @@
-body {
+#index_body {
     background-image: url("../images/background.jpg");
     background-repeat: no-repeat;
     background-size: cover;
@@ -15,11 +15,20 @@ body {
     flex-wrap: wrap;
 }
 
-.button {
+#signUp {
     background-color: blue;
     border-color: black;
     color: white;
     font-size: 16px;
+    font-family: revert;
+}
+
+#signIn {
+    background-color: blue;
+    border-color: black;
+    color: white;
+    font-size: 16px;
+    font-family: revert;
 }
 
 .container{
@@ -63,12 +72,24 @@ form {
     flex-direction: row;
     justify-content: space-between;
     flex-wrap: wrap;
+    padding-bottom: 15px;
+    border-bottom-style: inset;
+    border-bottom-color: black;
+    opacity: 0.6;
+    font-size: larger;
 }
 
 #form_content {
     display: flex;
     flex-direction: column;
     margin-top: 3%;
+}
+
+#form_footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 3%;
 }
 
 input {
@@ -83,20 +104,18 @@ input {
     size: 20px;
 }
 
-#signUpButton {
+#signUpButton,#signInButton {
+    margin-top: 10px;
     background-color: green;
     color: white;
     height: 40px;
     width: 100%;
 }
 
-#form_header {
-    padding-bottom: 15px;
-    border-bottom-style: inset;
-    opacity: 0.6;
-    font-size: larger;
-}
-
 #sub-heading {
     font-family: 'Ubuntu Mono', monospace;
+}
+
+.form-control {
+    background-color: lightgray;
 }
