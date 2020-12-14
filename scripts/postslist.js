@@ -20,3 +20,7 @@ function deletePost() {
     console.log(document.getElementsByClassName('modal-backdrop'));
    document.getElementsByClassName('modal-backdrop')[0].remove();
 }
+
+function showPost() {
+    location.href = "../html/post.html";
+}

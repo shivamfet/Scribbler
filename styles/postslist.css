@@ -32,6 +32,10 @@ body {
     padding: 5px;
 }
 
+#like_button {
+    text-align: left;
+}
+
 
 .post {
     display: flex;

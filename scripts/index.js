@@ -27,6 +27,7 @@ function showAllPosts() {
     location.href = "./html/postslist.html";
 }
 
+
 function signIn() {
 
 }
