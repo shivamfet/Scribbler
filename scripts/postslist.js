@@ -8,17 +8,23 @@ function showDeleteModal(elem) {
     console.log(y);
     deleteModal = new bootstrap.Modal(document.getElementById('deleteModal'), {
         keyboard: false
-      });
+    });
     deleteModal.show();
 }
 
-function deletePost() {
-    x.removeChild(y);
+function deletePost(btn) {
     var modal = document.getElementById('deleteModal');
-    console.log(modal);
-    modal.style.display = 'none';
-    console.log(document.getElementsByClassName('modal-backdrop'));
-   document.getElementsByClassName('modal-backdrop')[0].remove();
+    if (btn.textContent == 'Yes') {
+        x.removeChild(y);
+        console.log(modal);
+        modal.style.display = 'none';
+        console.log(document.getElementsByClassName('modal-backdrop'));
+        
+    } else {
+        modal.style.display = 'none';
+    }
+    document.getElementsByClassName('modal-backdrop')[0].remove();
+
 }
 
 function showPost() {
