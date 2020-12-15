@@ -33,15 +33,23 @@
                 Srishti Gupta
             </div>
             <div id="edit_save">
-                <button style="background-color: red;color: white;">Edit <i class="fa fa-edit"></i></button>
+                <button id= "btn" style="background-color: red;color: white;" onclick="edit_save(this)">Edit <i
+                        class="fa fa-edit"></i></button>
             </div>
         </div>
-        
+
         <div id="blog_content">
             <p>
-                Node.js treats each JavaScript file as a separate module.For instance, if you have a file containing some code and this file is named xyz.js, then this file is treated as a module in Node, and you can say that you’ve created a module named xyz.
-                Let’s take an example to understand this better.You have a file named circle.js which consists of the logic for calculating the area & the circumference of a circle of a given radius, as given below:
-                You can call circle.js file a module named circle.You might be wondering why is there a need to have multiple modules? You could have just written all the code in a single module. Well, it is very important to write modular code. By modular, I mean to say that your code should be independent and should be loosely coupled. Imagine that there’s a large application and you have all your code written in just one place, just one file. Too messy, right?
+                Node.js treats each JavaScript file as a separate module.For instance, if you have a file containing
+                some code and this file is named xyz.js, then this file is treated as a module in Node, and you can say
+                that you’ve created a module named xyz.
+                Let’s take an example to understand this better.You have a file named circle.js which consists of the
+                logic for calculating the area & the circumference of a circle of a given radius, as given below:
+                You can call circle.js file a module named circle.You might be wondering why is there a need to have
+                multiple modules? You could have just written all the code in a single module. Well, it is very
+                important to write modular code. By modular, I mean to say that your code should be independent and
+                should be loosely coupled. Imagine that there’s a large application and you have all your code written
+                in just one place, just one file. Too messy, right?
                 circle.js.
             </p>
         </div>
@@ -52,7 +60,7 @@
 
         <div id="comment">
             <textarea rows="5" cols="100"></textarea>
-            
+
         </div>
         <div id="comment_button">
             <button style="background-color: red; color: white;">Comment</button>
@@ -62,6 +70,9 @@
             All Comments
         </div>
 
-        
+
     </div>
+    <script src="../scripts/post.js"></script>
 </body>
+
+</html>

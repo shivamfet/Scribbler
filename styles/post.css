@@ -38,3 +38,8 @@
     margin-top: 10px;
     width: 100%;
 }
+
+#blog_title {
+    border-color: red;
+    border: 2px;
+}
