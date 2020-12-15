@@ -22,7 +22,7 @@
     margin-top: 50px;
 }
 
-#like_button , #comment_button ,#all_comments{
+#like_button , #comment_button ,#all_comments , #likes{
     display: flex;
     flex-direction: row;
     justify-content: left;

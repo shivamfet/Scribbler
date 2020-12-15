@@ -35,3 +35,24 @@ function edit_save(elem) {
         editSaveButton.innerHTML = 'Edit <i class="fa fa-edit"></i>';
     }
 }
+
+var blogLikes = {
+    "1" : 0 , 
+    "2" : 0 , 
+    "3" : 0 , 
+    "4" : 0 , 
+    "5" : 0 , 
+    "6" : 0
+};
+
+function postLike(likeButton , blogId) {
+    console.log(blogId);
+    blogLikes[blogId]++;
+    likeButton.innerHTML = ' Liked'
+    var likes = document.getElementById('likes')
+    likes.innerHTML = blogLikes[blogId] + ' person liked this!'
+}
+
+function numOfLikes() {
+
+}
