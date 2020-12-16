@@ -36,7 +36,7 @@ function edit_save(elem) {
     }
 }
 
-var blogLike = {
+var blogLikes = {
     "1" : 0 , 
     "2" : 0 , 
     "3" : 0 , 
@@ -55,14 +55,13 @@ function postLike(likeButton , blogId) {
 
 function postComment() {
     var commentText = document.getElementById('commentValue').value;
-    console.log(comment);
-
     var comments = document.getElementById('display_comments');
     var comment = document.createElement('div');
     comment.id = 'display_comment';
     comment.textContent = commentText;
     comments.prepend(comment);
 
+    document.getElementById('commentValue').value = '';
 }
 
 function numOfLikes() {
