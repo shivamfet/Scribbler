@@ -36,7 +36,7 @@ function edit_save(elem) {
     }
 }
 
-var blogLikes = {
+var blogLike = {
     "1" : 0 , 
     "2" : 0 , 
     "3" : 0 , 
@@ -49,8 +49,20 @@ function postLike(likeButton , blogId) {
     console.log(blogId);
     blogLikes[blogId]++;
     likeButton.innerHTML = ' Liked'
-    var likes = document.getElementById('likes')
-    likes.innerHTML = blogLikes[blogId] + ' person liked this!'
+    var likes = document.getElementById('likes');
+    likes.innerHTML = blogLikes[blogId] + ' person liked this!';
+}
+
+function postComment() {
+    var commentText = document.getElementById('commentValue').value;
+    console.log(comment);
+
+    var comments = document.getElementById('display_comments');
+    var comment = document.createElement('div');
+    comment.id = 'display_comment';
+    comment.textContent = commentText;
+    comments.prepend(comment);
+
 }
 
 function numOfLikes() {

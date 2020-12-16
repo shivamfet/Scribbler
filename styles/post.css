@@ -22,7 +22,7 @@
     margin-top: 50px;
 }
 
-#like_button , #comment_button ,#all_comments , #likes{
+#like_button , #comment_button ,#all_comments , #likes , #comment {
     display: flex;
     flex-direction: row;
     justify-content: left;
@@ -30,12 +30,20 @@
     width: 100%;
 }
 
-#comment {
+#display_comments {
     display: flex;
     flex-direction: column;
     justify-content: left;
-    margin-top: 10px;
+    background-color: lightgray;
     width: 100%;
+}
+
+#display_comment {
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    background-color: white;
+    margin: 10px;
 }
 
 #blog_title {
