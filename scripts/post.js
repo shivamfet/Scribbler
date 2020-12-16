@@ -55,6 +55,9 @@ function postLike(likeButton , blogId) {
 
 function postComment() {
     var commentText = document.getElementById('commentValue').value;
+    if (commentText == '') {
+        return;
+    }
     var comments = document.getElementById('display_comments');
     var comment = document.createElement('div');
     comment.id = 'display_comment';

@@ -26,12 +26,3 @@ function showCreatePostModal() {
 function showAllPosts() {
     location.href = "./html/postslist.html";
 }
-
-
-function signIn() {
-
-}
-
-function signUp() {
-
-}
